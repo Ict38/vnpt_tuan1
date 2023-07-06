@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">vnpt_tuan1</string>
+
+
+    // Menu
+    <string name="danh_sach">Danh Sách</string>
+    <string name="thong_tin">Thông Tin</string>
+    <string name="tim_kiem">Tìm Kiếm</string>
+</resources>
