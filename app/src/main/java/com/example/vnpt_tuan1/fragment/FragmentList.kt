@@ -59,7 +59,7 @@ class FragmentList : Fragment(), RecyclerViewAdapter.OnItemClickListener {
     }
 
     override fun onItemClick(position: Int) {
-        val book: Book? = adapter.getItem(position)
+        val book: Book = adapter.getItem(position)
         val intent = Intent(activity, UpdateDeleteActivity::class.java)
         intent.putExtra("book", book)
         startActivity(intent)

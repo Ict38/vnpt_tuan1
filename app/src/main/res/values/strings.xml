@@ -16,5 +16,10 @@
     <string name="price">Giá</string>
     <string name="language">Ngôn ngữ</string>
     <string name="java">Java</string>
-    <string name="kotlin">kotlin\n</string>
+    <string name="kotlin">kotlin</string>
+    <string-array name="nxb">
+        <item>Giao duc</item>
+        <item>Khoa hoc</item>
+        <item>PTIT </item>
+    </string-array>
 </resources>

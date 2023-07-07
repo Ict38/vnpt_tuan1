@@ -4,6 +4,7 @@ import androidx.room.Dao
 import androidx.room.Delete
 import androidx.room.Insert
 import androidx.room.Query
+import androidx.room.Update
 import com.example.vnpt_tuan1.model.Book
 
 @Dao
@@ -11,9 +12,11 @@ interface BookDAO {
     @Query("SELECT * FROM book")
     fun getAll(): List<Book>
     @Insert
-    fun insertAll(vararg users: Book)
+    fun insertAll(vararg book: Book)
 
+    @Update
+    fun update(book  : Book)
     @Delete
-    fun delete(user: Book)
+    fun delete(book: Book)
 }
 
