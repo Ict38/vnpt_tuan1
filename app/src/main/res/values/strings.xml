@@ -6,4 +6,15 @@
     <string name="danh_sach">Danh Sách</string>
     <string name="thong_tin">Thông Tin</string>
     <string name="tim_kiem">Tìm Kiếm</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="list_name">Danh \'Sách\'</string>
+    <string name="name">Tên</string>
+    <string name="holder">TextView</string>
+    <string name="publisher">Nhà XB</string>
+    <string name="publishdate">Ngày XB</string>
+    <string name="price">Giá</string>
+    <string name="language">Ngôn ngữ</string>
+    <string name="java">Java</string>
+    <string name="kotlin">kotlin\n</string>
 </resources>
