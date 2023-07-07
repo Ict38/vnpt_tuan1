@@ -3,6 +3,9 @@
     <item android:id="@+id/item_menu_list"
         android:icon="@drawable/ic_list"
         android:title="@string/danh_sach"/>
+    <item android:id="@+id/item_menu_bonus"
+        android:icon="@drawable/ic_infor"
+        android:title="@string/bonus"/>
     <item android:id="@+id/item_menu_search"
         android:icon="@drawable/ic_search"
         android:title="@string/tim_kiem"/>
