@@ -52,9 +52,7 @@ class FragmentList : Fragment(), RecyclerViewAdapter.OnItemClickListener {
 
     override fun onResume() {
         super.onResume()
-
         val list: List<Book> = bookDAO.getAll()
-        adapter = RecyclerViewAdapter(list,this)
         adapter.setBookList(list)
     }
 

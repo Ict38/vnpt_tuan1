@@ -54,7 +54,7 @@ class AddActivity : AppCompatActivity() {
                 else "kotlin"
                 val publishDate: String = binding.edPublishDate.getText().toString()
                 val publisher: String = binding.spinnerPublisher.getSelectedItem().toString()
-                val bookToAdd = Book(0,name, ngonngu, publishDate, publisher)
+                val bookToAdd = Book(name = name, language = ngonngu, releaseDate = publishDate, publisher= publisher)
                 val db = AppDatabase.getInstance(this)
                 val bookDAO = db?.BookDAO()!!
                 bookDAO.insertAll(bookToAdd)

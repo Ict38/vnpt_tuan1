@@ -17,6 +17,7 @@ class RecyclerViewAdapter(
 
     fun setBookList(bookList: List<Book>){
         this.bookList = bookList
+        notifyDataSetChanged()
     }
 
     fun getItem(position: Int): Book {
