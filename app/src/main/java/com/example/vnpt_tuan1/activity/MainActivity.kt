@@ -36,7 +36,8 @@ class MainActivity : AppCompatActivity() {
             override fun onPageSelected(position: Int) {
                 when (position) {
                     0 -> binding.bottomNav.menu.findItem(R.id.item_menu_list).isChecked = true
-                    1 -> binding.bottomNav.menu.findItem(R.id.item_menu_search).isChecked = true
+                    1 -> binding.bottomNav.menu.findItem(R.id.item_menu_bonus).isChecked = true
+                    2 -> binding.bottomNav.menu.findItem(R.id.item_menu_search).isChecked = true
                 }
             }
 
@@ -45,7 +46,8 @@ class MainActivity : AppCompatActivity() {
         binding.bottomNav.setOnNavigationItemSelectedListener(BottomNavigationView.OnNavigationItemSelectedListener { item ->
             when (item.itemId) {
                 R.id.item_menu_list -> binding.viewPager.currentItem = 0
-                R.id.item_menu_search -> binding.viewPager.currentItem = 1
+                R.id.item_menu_bonus -> binding.viewPager.currentItem = 1
+                R.id.item_menu_search -> binding.viewPager.currentItem = 2
             }
             false
         })

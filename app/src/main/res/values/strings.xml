@@ -19,6 +19,9 @@
     <string name="kotlin">kotlin</string>
     <string name="search_hint">Nhập thông tin sách</string>
     <string name="bonus">bonus</string>
+    <string name="grid">GRID</string>
+    <string name="autocomplete">AutoComplete</string>
+    <string name="autotext">autotext</string>
     <string-array name="nxb">
         <item>Giao duc</item>
         <item>Khoa hoc</item>

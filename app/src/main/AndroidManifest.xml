@@ -1,6 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:dist="http://schemas.android.com/apk/distribution"
     xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-feature
+        android:name="android.hardware.telephony"
+        android:required="false" />
+
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+
+    <dist:module dist:instant="true" />
 
     <application
         android:allowBackup="true"
@@ -13,6 +23,12 @@
         android:theme="@style/Theme.Vnpt_tuan1"
         tools:targetApi="31">
         <activity
+            android:name=".activity.AutoCompleteActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.GridActivity"
+            android:exported="false" />
+        <activity
             android:name=".activity.UpdateDeleteActivity"
             android:exported="false" />
         <activity
@@ -23,7 +39,6 @@
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>

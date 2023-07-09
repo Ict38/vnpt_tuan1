@@ -1,0 +1,1 @@
+class Cat(var img: Int, var name: String)
